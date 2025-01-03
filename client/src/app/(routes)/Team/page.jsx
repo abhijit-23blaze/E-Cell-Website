@@ -614,17 +614,17 @@ useEffect(() => {
              <div className=" group/card" key={item.id}>
              <div
                className={cn(
-"cursor-pointer overflow-hidden relative card rounded-lg shadow-xl",
-  "h-[250px] w-[250px]", // Base square size
-  "sm:h-[280px] sm:w-[280px]", // Small screens
-  "md:h-[300px] md:w-[300px]", // Medium screens
-  "mx-auto my-3", // Consistent spacing
-  "bg-cover bg-center bg-no-repeat",
-  "transition-all duration-300"               )}
-  style={{
-    backgroundImage: `url('${item.drive_file_id
-      ? convertDriveUrlToDirectLink(item.drive_file_id)
-      : "/images/default.png"}')`,
+        "cursor-pointer overflow-hidden relative card rounded-lg shadow-xl",
+          "h-[250px] w-[250px]", // Base square size
+          "sm:h-[280px] sm:w-[280px]", // Small screens
+          "md:h-[300px] md:w-[300px]", // Medium screens
+          "mx-auto my-3", // Consistent spacing
+          "bg-cover bg-center bg-no-repeat",
+          "transition-all duration-300"               )}
+          style={{
+            backgroundImage: `url('${item.drive_file_id
+              ? convertDriveUrlToDirectLink(item.drive_file_id)
+              : "/images/default.png"}')`,
   }}
 
              >
