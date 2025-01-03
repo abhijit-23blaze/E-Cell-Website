@@ -41,7 +41,7 @@ function HeroText() {
       </div>
       <div className="flex gap-8">
 
-      <a href="https://www.instagram.com/cc_rcoe/profilecard/?igsh=MW54bHhrdDJjcXFuaw==">
+      <a href="https://www.instagram.com/e-cell-iiits">
       <div className="flex justify-center">
         <button className=" bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-s font-semibold leading-6 text-white">
           <span className="absolute inset-0 overflow-hidden rounded-full">
@@ -55,7 +55,7 @@ function HeroText() {
         </button>
       </div>
       </a>
-      <a href="https://www.linkedin.com/company/code-cell-rcoe/">
+      <a href="https://www.linkedin.com/company/e-cell-iiits">
       <div className="flex justify-center">
         <button className=" bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-s font-semibold leading-6 text-white">
           <span className="absolute inset-0 overflow-hidden rounded-full">
