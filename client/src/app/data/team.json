@@ -1,0 +1,37 @@
+{
+    
+    "prof": [
+      {
+        "id": 1,
+        "name": "Abhishek Hazra",
+        "about": "Mentor",
+        "drive_file_id": "/abhisheksir.jpg"
+      }
+    ],
+    "president": [
+      {
+        "id": 1,
+        "name": "Deraj Yojith",
+        "about": "President",
+        "drive_file_id": "/Image (2).JPG"
+      }
+    ],
+    "vpresident": [
+      {
+        "id": 1,
+        "name": "Abhijit Patil",
+        "about": "Vice President",
+        "drive_file_id": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=3540&auto=format&fit=crop"
+      }
+    ],
+    "execd": [
+      {
+        
+      }
+    ],
+    "execa": [
+      {
+        
+      }
+    ]
+  }
