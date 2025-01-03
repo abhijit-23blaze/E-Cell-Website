@@ -14,9 +14,7 @@ function page() {
           ABOUT US 
         </h1>
         <p className="mt-4 font-normal text-lg text-neutral-300 max-w-xl text-justify mx-auto">
-        CodeCell at Rizvi College of Engineering was founded to ignite a thriving tech culture on campus, where passionate students come together to learn, collaborate, and innovate. Our mission is to create a supportive environment where members grow by organizing and managing various technical events—from workshops and hackathons to competitions and speaker sessions.
-
-We believe in learning and growing as a community, and every member brings unique strengths that contribute to our shared goals. Together, we’re building a space where everyone can experiment, connect, and excel. Join us at CodeCell as we shape a culture of growth, curiosity, and achievement at Rizvi College.
+        E Cell IIITS is a pioneering organisation helping and encouraging young student to step into entreprenuership and make an Impact on the world.
         </p>
       </div>
     </div>

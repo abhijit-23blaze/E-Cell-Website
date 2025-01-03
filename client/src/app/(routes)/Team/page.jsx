@@ -272,7 +272,7 @@ useEffect(() => {
 
   const data = [
     {
-      title: "Professors",
+      title: "Mentor",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-10">
@@ -318,7 +318,7 @@ useEffect(() => {
       ),
     },
     {
-      title: "Head",
+      title: "President",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -365,7 +365,7 @@ useEffect(() => {
       ),
     },
     {
-      title: "Technology Team",
+      title: "Vice president",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -415,7 +415,7 @@ useEffect(() => {
       ),
     },
     {
-      title: "Management Team",
+      title: "Executives",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -462,7 +462,148 @@ useEffect(() => {
       ),
     },
     {
-      title: "Marketing Team",
+      title: "Operations",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            The Management team oversees project execution, resource allocation, and team coordination.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+          {management.map((item, index) => (
+             <div className=" group/card" key={item.id}>
+             <div
+               className={cn(
+"cursor-pointer overflow-hidden relative card rounded-lg shadow-xl",
+  "h-[250px] w-[250px]", // Base square size
+  "sm:h-[280px] sm:w-[280px]", // Small screens
+  "md:h-[300px] md:w-[300px]", // Medium screens
+  "mx-auto my-3", // Consistent spacing
+  "bg-cover bg-center bg-no-repeat",
+  "transition-all duration-300"               )}
+  style={{
+    backgroundImage: `url('${item.drive_file_id
+      ? convertDriveUrlToDirectLink(item.drive_file_id)
+      : "/images/default.png"}')`,
+  }}
+
+             >
+               <div className="absolute inset-0 bg-black opacity-0 group-hover/card:opacity-40 transition-opacity duration-300"></div> {/* Background overlay */}
+               <div className="absolute inset-0 flex flex-col justify-end  items-center text-white p-4 z-10 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
+                 <h1 className="font-bold text-xl md:text-2xl">
+                   {item.name || "Event Title"}
+                 </h1>
+                 <p className="font-normal text-sm md:text-base">
+                   {item.about || "Event Date"}
+                 </p>
+               </div>
+             </div>
+           </div>
+
+            ))}
+          </div>
+          <div
+      className=" rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards items={management1} direction="right"  />
+    </div>
+        </div>
+      ),
+    },
+    {
+      title: "Creatives",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            The Management team oversees project execution, resource allocation, and team coordination.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+          {management.map((item, index) => (
+             <div className=" group/card" key={item.id}>
+             <div
+               className={cn(
+"cursor-pointer overflow-hidden relative card rounded-lg shadow-xl",
+  "h-[250px] w-[250px]", // Base square size
+  "sm:h-[280px] sm:w-[280px]", // Small screens
+  "md:h-[300px] md:w-[300px]", // Medium screens
+  "mx-auto my-3", // Consistent spacing
+  "bg-cover bg-center bg-no-repeat",
+  "transition-all duration-300"               )}
+  style={{
+    backgroundImage: `url('${item.drive_file_id
+      ? convertDriveUrlToDirectLink(item.drive_file_id)
+      : "/images/default.png"}')`,
+  }}
+
+             >
+               <div className="absolute inset-0 bg-black opacity-0 group-hover/card:opacity-40 transition-opacity duration-300"></div> {/* Background overlay */}
+               <div className="absolute inset-0 flex flex-col justify-end  items-center text-white p-4 z-10 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
+                 <h1 className="font-bold text-xl md:text-2xl">
+                   {item.name || "Event Title"}
+                 </h1>
+                 <p className="font-normal text-sm md:text-base">
+                   {item.about || "Event Date"}
+                 </p>
+               </div>
+             </div>
+           </div>
+
+            ))}
+          </div>
+          <div
+      className=" rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards items={management1} direction="right"  />
+    </div>
+        </div>
+      ),
+    },
+    {
+      title: "Graphics",
+      content: (
+        <div>
+          <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
+            The Management team oversees project execution, resource allocation, and team coordination.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 place-items-center">
+          {management.map((item, index) => (
+             <div className=" group/card" key={item.id}>
+             <div
+               className={cn(
+"cursor-pointer overflow-hidden relative card rounded-lg shadow-xl",
+  "h-[250px] w-[250px]", // Base square size
+  "sm:h-[280px] sm:w-[280px]", // Small screens
+  "md:h-[300px] md:w-[300px]", // Medium screens
+  "mx-auto my-3", // Consistent spacing
+  "bg-cover bg-center bg-no-repeat",
+  "transition-all duration-300"               )}
+  style={{
+    backgroundImage: `url('${item.drive_file_id
+      ? convertDriveUrlToDirectLink(item.drive_file_id)
+      : "/images/default.png"}')`,
+  }}
+
+             >
+               <div className="absolute inset-0 bg-black opacity-0 group-hover/card:opacity-40 transition-opacity duration-300"></div> {/* Background overlay */}
+               <div className="absolute inset-0 flex flex-col justify-end  items-center text-white p-4 z-10 opacity-0 group-hover/card:opacity-100 transition-opacity duration-300">
+                 <h1 className="font-bold text-xl md:text-2xl">
+                   {item.name || "Event Title"}
+                 </h1>
+                 <p className="font-normal text-sm md:text-base">
+                   {item.about || "Event Date"}
+                 </p>
+               </div>
+             </div>
+           </div>
+
+            ))}
+          </div>
+          <div
+      className=" rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+      <InfiniteMovingCards items={management1} direction="right"  />
+    </div>
+        </div>
+      ),
+    },
+    {
+      title: "Management",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">

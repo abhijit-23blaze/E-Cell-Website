@@ -32,78 +32,71 @@ function Navbar({ className }) {
       )}
     >
       <Menu setActive={setActive}>
-        
+    <Link href="/">
+      <MenuItem setActive={setActive} active={active} item="Home" />
+    </Link>
 
-        
-    
-        
-        
-          <Link href="/">
-          <MenuItem setActive={setActive} active={active} item="Home" />
-          </Link>
+    {/* Desktop Navigation */}
+    <div className="hidden md:flex md:flex-row md:items-center md:space-x-4"> {/* Hidden on mobile, visible on medium screens and up */}
+      <Link href="/Partners">
+        <MenuItem setActive={setActive} active={active} item="Partners" />
+      </Link>
 
-          {/* ------- on desktop -------- */}
+      <Link href="/Incubtor">
+        <MenuItem setActive={setActive} active={active} item="Incubator" />
+      </Link>
 
-          <Link href="/Partners">
-          <MenuItem setActive={setActive} active={active} item="Partners" />
-          </Link>
+      <Link href="/Events">
+        <MenuItem setActive={setActive} active={active} item="Events" />
+      </Link>
 
-          <Link href="/Incubtor">
-          <MenuItem setActive={setActive} active={active} item="Incubator" />
-          </Link>
+      <Link href="/About">
+        <MenuItem setActive={setActive} active={active} item="About Us" />
+      </Link>
 
-          <Link href="/Events">
-          <MenuItem setActive={setActive} active={active} item="Events" />
-          </Link>
+      <Link href="/Team">
+        <MenuItem setActive={setActive} active={active} item="Team" />
+      </Link>
+    </div>
 
-          <Link href="/About">
-          <MenuItem setActive={setActive} active={active} item="About Us" />
-          </Link>
+    {/* Mobile Navigation */}
+    <div className="block md:hidden"> {/* Visible on mobile, hidden on medium screens and up */}
+      <MenuItem setActive={setActive} active={active} item="Discover">
+        <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
+          <ProductItem
+            title="Events"
+            href="/Events"
+            src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            description="All the upcoming, ongoing, and past events conducted by E Cell IIITS"
+          />
+          <ProductItem
+            title="Incubator"
+            href="/Incubator"
+            src="https://images.pexels.com/photos/1226721/pexels-photo-1226721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            description="Check out our Incubator Portfolio"
+          />
+          <ProductItem
+            title="Partners"
+            href="/Partners"
+            src="https://images.pexels.com/photos/1226721/pexels-photo-1226721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            description="Check out our Partners"
+          />
+          <ProductItem
+            title="About us"
+            href="/About"
+            src={img}
+            description="Know more about E Cell IIITS"
+          />
+          <ProductItem
+            title="Team"
+            href="/Team"
+            src={img}
+            description="Meet the team behind E Cell IIITS"
+          />
+        </div>
+      </MenuItem>
+    </div>
 
-          <Link href="/Team">
-          <MenuItem setActive={setActive} active={active} item="Team" />
-          </Link>
-
-          
-       
-          {/* ------- on mobile -------- */}
-
-        
-
-        <MenuItem setActive={setActive} active={active} item="Discover">
-          <div className="text-sm grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
-            <ProductItem
-              title="Events"
-              href="/Events"
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              description="All the upcoming, ongoing, and past events conducted by E Cell IIITS"
-            />
-            <ProductItem
-              title="Incubator"
-              href="/Incubator"
-              src="https://images.pexels.com/photos/1226721/pexels-photo-1226721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              description="Check out our Incubator Portfolio"
-            />
-            <ProductItem
-              title="Partners"
-              href="/Partners"
-              src="https://images.pexels.com/photos/1226721/pexels-photo-1226721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              description="Check out our Partners"
-            />
-            <ProductItem
-              title="About us"
-              href="/About"
-              src={img}
-              description="Know more about E Cell IIITS"
-            />
-            <ProductItem
-              title="Team"
-              href="/Team"
-              src={img}
-              description="Meet the team behind E Cell IIITS"
-            />
-          </div>
-        </MenuItem>
         {/* {session||contextisLoggedIn ? (
 
           

@@ -1,6 +1,7 @@
 import React from 'react';
 import Map from '../components/Map';
 import Image from 'next/image';
+import image from '../../public/IIITS.jpg';
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
 import { cn } from "@/lib/utils";
 import Link from 'next/link';
@@ -10,25 +11,19 @@ function Footer() {
   const people = [
     {
       id: 1,
-      name: "Fareed Sayyed",
-      designation: "Backend Developer",
+      name: "Abhijit Patil",
+      designation: "Full Stack Developer",
       image:
-        "https://avatars.githubusercontent.com/u/143815597?v=4",
-    },
-    {
-      id: 2,
-      name: "Rehbar Khan",
-      designation: "Fronted Developer",
-      image:
-        "https://avatars.githubusercontent.com/u/136853370?v=4",
+        "https://avatars.githubusercontent.com/u/69165799?s=400&u=ca65f83b4db8a58427b5fa5f56f7918d2f04cc78&v=4",
     }
+    
   ];
   return (
     <div className='flex flex-col'>
       <div className='flex sm:h-[25rem] h-[20vh] '>
     <div className="relative w-[60vw]  overflow-auto">
       <Image
-        src="https://upload.wikimedia.org/wikipedia/commons/9/94/RCoE_-_RCoA_common_entrance.jpg"
+        src={image}
         layout="fill"
         objectFit="cover"
         alt="College Entrance"
@@ -50,7 +45,8 @@ function Footer() {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">About Us</h4>
             <p>
-            CodeCell at Rizvi College of Engineering fosters a vibrant tech culture, uniting passionate students to learn, collaborate, and innovate. Our mission is to create a supportive community through workshops, hackathons, and competitions, enabling members to experiment, connect, and excel while contributing to shared growth and achievement. Join us!            </p>
+              E Cell IIITS is a pioneering organisation helping and encouraging young student to step into entreprenuership and make an Impact on the world.
+           </p>
           </div>
 
 
@@ -61,19 +57,19 @@ function Footer() {
       <AnimatedTooltip items={people} />
     </div>
             <p>
-              <strong>Email:</strong> codecell@eng.rizvi.edu.in
+              <strong>Email:</strong> ecell@iiits.in
             </p>
             <p>
-              <strong>Address:</strong> Rizvi Educational Complex Off Carter Road, Sherly Rajan Rd, Bandra West, Mumbai, Maharashtra 400050
+              <strong>Address:</strong> Indian Institue of Information Technology, Sri City, AP, India
             </p>
           </div>
         </div>
 
         <div className="mt-8 border-t border-neutral-600 pt-4 text-center">
-          <p>&copy; 2024 Code Cell RCOE. All rights reserved.</p>
+          <p>&copy; 2024 E Cell IIITS. All rights reserved.</p>
           <div className="mt-2 space-x-4">
-            <LinkPreview url="https://www.instagram.com/cc_rcoe/profilecard/?igsh=MW54bHhrdDJjcXFuaw==" className="hover:text-white">Twitter</LinkPreview>
-            <LinkPreview url="https://www.linkedin.com/company/code-cell-rcoe/" className="hover:text-white">LinkedIn</LinkPreview>
+            {/* <LinkPreview url="https://www.instagram.com/cc_rcoe/profilecard/?igsh=MW54bHhrdDJjcXFuaw==" className="hover:text-white">Twitter</LinkPreview> */}
+            <LinkPreview url="https://www.linkedin.com/company/e-cell-iiits/" className="hover:text-white">LinkedIn</LinkPreview>
           </div>
         </div>
       </div>
